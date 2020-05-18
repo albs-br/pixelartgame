@@ -1,8 +1,9 @@
 import './style.css';
-
+// import { * } from './constants.js';
 const PIXEL_SIZE = 4;
 const SCREEN_WIDTH = 160;
 const SCREEN_HEIGHT = 120;
+
 
 const canvas = document.getElementsByTagName('canvas')[0];
 
@@ -29,7 +30,7 @@ putPixel(2, 2);
 let dateTimeStart = new Date()
 for(let y=0; y<SCREEN_HEIGHT; y++) {
   for(let x=0; x<SCREEN_WIDTH; x++) {
-    //ctx.fillStyle = "#FF0000"; 
+    ctx.fillStyle = "#FF0000"; 
     putPixel(x, y);
   }
 }
