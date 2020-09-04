@@ -46,7 +46,7 @@ setColor(BLUE);
 // ctx.fillRect(220, 20, 150, 200);
 
 
-console.info(rnd(4, 6));
+//console.info(rnd(4, 6));
 
 
 putPixel(0, 0);
