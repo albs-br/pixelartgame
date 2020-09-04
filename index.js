@@ -46,6 +46,9 @@ setColor(BLUE);
 // ctx.fillRect(220, 20, 150, 200);
 
 
+console.info(rnd(4, 6));
+
+
 putPixel(0, 0);
 putPixel(1, 1);
 putPixel(2, 2);
@@ -53,6 +56,12 @@ putPixel(2, 2);
 let dateTimeStart = new Date()
 for(let y=0; y<SCREEN_HEIGHT; y++) {
   for(let x=0; x<SCREEN_WIDTH; x++) {
+    let color = rnd(0, 2);
+    
+    if(color == 0) setColor(RED);
+    else if(color == 1) setColor(GREEN);
+    else if(color == 2) setColor(BLUE);
+    
     putPixel(x, y);
   }
 }
